@@ -1,0 +1,12 @@
+<h1>The words typed are : </h1><h2>{{fulltext}}</h2>
+<h1> there are {{count}} words </h1>
+And each words count is : {{each_count}}
+<br/>
+<h3>Now displaying count of each word using for loop in html</h3>
+{% for key,value in each_count%}
+{{key}} - {{value}}
+<br/>
+{%endfor%}
+<h5> Do you want to try again?</h5>
+<a href="{%url 'home'%}">Yes</a>
+

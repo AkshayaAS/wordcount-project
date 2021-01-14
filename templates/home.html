@@ -1,0 +1,18 @@
+<h1>This is a home page of my word count website! </h1>
+<h2>Welcome
+
+{{users}}
+</h2>
+<br/>
+<br/>
+<form action="{%url 'count'%}">
+<textarea cols="50" rows="10" name="fulltext"></textarea>
+<br/>
+<br/>
+<input type="submit" value="count words"/>
+</form>
+<br/>
+<br/>
+<form action="{%url 'about'%}">
+<input type="submit" value="About Us"/>
+</form>
